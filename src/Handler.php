@@ -252,6 +252,6 @@ class Handler extends ExceptionHandler
             'Access-Control-Allow-Headers'     => 'Authorization, Content-Type,Accept,Origin,Keep-Alive,User-Agent,Cache-Control,Referer',
             'Content-Type'                     => 'application/json;charset=utf-8'
         ], $this->header);
-        return new Response($this->statusCode, $header, json_encode($responseBody));
+        return new Response((('400' == $this->statusCode) ? 200 : $this->statusCode), $header, json_encode($responseBody));
     }
 }
