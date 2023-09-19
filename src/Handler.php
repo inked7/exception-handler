@@ -246,7 +246,7 @@ class Handler extends ExceptionHandler
 
         $header = array_merge([
             'Access-Control-Allow-Credentials' => 'true',
-            'Access-Control-Allow-Origin'      => '*',
+//            'Access-Control-Allow-Origin'      => '*',
             'Access-Control-Max-Age'           => 1728000,
             'Access-Control-Allow-Methods'     => 'GET, POST, PATCH, PUT, DELETE',
             'Access-Control-Allow-Headers'     => 'Authorization, Content-Type,Accept,Origin,Keep-Alive,User-Agent,Cache-Control,Referer',
